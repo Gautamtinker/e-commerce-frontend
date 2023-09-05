@@ -5,7 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js",
+    "start": "node server.js",
     "prestart": "npm install",
     "pretest": "npm install",
     "test": "cross-env PORT=8001 ./node_modules/.bin/mocha --reporter mocha-multi-reporters --reporter-options configFile=config.json --exit"
