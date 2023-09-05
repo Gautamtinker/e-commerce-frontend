@@ -5,8 +5,10 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app.js",
+    "prestart": "npm install",
+    "pretest": "npm install",
+    "test": "cross-env PORT=8001 ./node_modules/.bin/mocha --reporter mocha-multi-reporters --reporter-options configFile=config.json --exit"
   },
   "keywords": [],
   "author": "",
