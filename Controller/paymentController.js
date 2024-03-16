@@ -2,7 +2,7 @@ import stripe from "stripe";
 import asyncErrorHandler from "../middleware/asyncError.js";
 
 const stripeInst = stripe(
-  "sk_test_51NnKfuSJR2WoDGPi2jHzxiipIoNy8sEsoaxkyawP1ZKQ0W9ZNKDjszMQIFQyxRNQkm31o9BDOqFwTGAFdrhQM1gJ00l1pgOuaZ",
+  "sk_test_51NnKfuSJR2WoDGPi2jHzxiipIoNy8sEsoaxkyawP1ZKQ0W9ZNKDjszMQIFQyxRNQkm31o9BDOqFwTGAFdrhQM1gJ00l1pgOuaZ"
 );
 
 var latestSession;

@@ -12,6 +12,7 @@ process.on("uncaughtException", (err) => {
 });
 
 connectDatabase();
+console.log(process.env.CLOUDINARY_NAME);
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_NAME,
@@ -28,7 +29,7 @@ if(process.env.NODE_ENV = "production"){
     })
 }
 */
-const PORT = process.env.PORT || 8080;
+const PORT = 8080;
 const server = app.listen(PORT, () => {
   console.log(`server is running on port ${PORT}`);
 });
